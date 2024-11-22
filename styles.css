@@ -24,12 +24,14 @@ body {
 }
 
 .input-field {
-    width: 100%; /* Full width input */
+    width: 100%; /* Full width textarea */
     padding: 10px;
-    margin-bottom: 15px; /* Spacing below input */
+    margin-bottom: 15px; /* Spacing below the textarea */
     border: 1px solid #bfbfbf;
     border-radius: 5px;
     font-size: 16px;
+    resize: none; /* Prevent resizing */
+    line-height: 1.5; /* Better readability for multiple lines */
 }
 
 .content-box {
