@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    padding: 20px; /* Added padding for mobile responsiveness */
+}
+
+.wrapper {
+    width: 100%; /* Set to 100% for better responsiveness */
+    max-width: 770px; /* Max width for larger screens */
+    padding: 35px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Reduced shadow opacity */
+}
+
+.input-field {
+    width: 100%; /* Full width input */
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing below input */
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.content-box {
+    padding: 15px 20px; /* Adjusted padding */
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
+
+.typing-text p {
+    font-size: 16px; /* Increased font size for readability */
+    line-height: 1.5; /* Better spacing for text */
+    color: #333; /* Darker text for readability */
+}
+
+.content {
+    margin-top: 20px; /* Added spacing between sections */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #bfbfbf;
+    padding-top: 15px;
+}
+
+.result-details {
+    display: flex;
+    flex-wrap: wrap; /* Ensures proper wrapping on smaller screens */
+    gap: 10px; /* Added spacing between items */
+    width: 100%; /* Ensure full width */
+    justify-content: space-between;
+}
+
+.result-details li {
+    list-style: none; /* Remove default list styles */
+    display: flex;
+    flex-direction: column; /* Stack elements in each list item */
+    align-items: center;
+    text-align: center;
+    flex: 1; /* Distribute space equally */
+}
+
+.result-details li p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.result-details li span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF; /* Modern blue button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.typing-text p span {
+    position: relative;
+}
+.typing-text p span.active {
+    color:orange;
+}
+
+.typing-text p span.correct {
+    color :green;
+}
+
+.typing-text p span.incorrect {
+    color :red;
+    outline: 1px solid white;
+    background: #ffc0cb;
+}
